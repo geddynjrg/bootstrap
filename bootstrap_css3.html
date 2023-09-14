@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Details</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for layout */
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2023/08/26/09/04/strawberry-8214486_1280.jpg'); /* Initial background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: backgroundChange 15s linear infinite; /* Animation properties */
+        }
+
+        @keyframes backgroundChange {
+            0% {
+                background-image: url('https://cdn.pixabay.com/photo/2023/08/26/09/04/strawberry-8214486_1280.jpg'); /* Initial background image */
+            }
+            33% {
+                background-image: url('https://cdn.pixabay.com/photo/2023/09/10/00/49/lovebird-8244066_1280.jpg'); /* Second background image */
+            }
+            66% {
+                background-image: url('https://cdn.pixabay.com/photo/2023/02/04/21/32/flowers-7768218_1280.jpg'); /* Third background image */
+            }
+            100% {
+                background-image: url('https://cdn.pixabay.com/photo/2023/08/26/09/04/strawberry-8214486_1280.jpg'); /* Back to the initial background image */
+            }
+        }
+
+        .card {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.356);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Apply gradient to inputs and button */
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        input[type="file"],
+        button {
+            background-image: linear-gradient(to bottom, #a1dffa, #00c8ff); /* Gradient colors */
+            color: #fff; /* Text color */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Style button on hover */
+        button:hover {
+            background-image: linear-gradient(to bottom, #FFA500, #FFD700); /* Hover gradient colors */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="upload">Upload Image:</label>
+                <input type="file" id="upload">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
